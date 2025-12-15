@@ -1,0 +1,13 @@
+// ==============================
+// Custom style
+// 自定义样式
+// ==============================
+
+/* link colours */
+html[data-theme='dark'] a {
+  color: #CCA600 !important;
+}
+
+html[data-theme='dark'] a:hover {
+  color: #FFD000 !important;
+}
