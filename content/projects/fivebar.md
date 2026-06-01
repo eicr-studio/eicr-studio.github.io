@@ -3,6 +3,7 @@ title: "five-bar linkage design tools"
 date: 2026-06-01
 draft: false
 summary: "Interactive tools for exploring five-bar linkage geometry, reachability, singularities, and quasi-static torque."
+thumbnail: "/images/fivebar-150x150.png"
 tags:
   - parallel robotics
   - mechanism design
