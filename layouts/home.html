@@ -6,42 +6,129 @@
 {{- end -}}
 
 {{- define "content" -}}
-  {{- $params := partial "function/params.html" -}}
-  {{- $profile := .Site.Params.home.profile -}}
-  {{- $posts := .Site.Params.home.posts -}}
+  <div class="page home home-landing">
+    <section class="home-hero" aria-labelledby="home-title">
+      <div class="home-hero-copy">
+        <p class="home-eyebrow">Embodied Intelligence &amp; Collective Robotics Lab</p>
+        <h1 id="home-title">{{ .Params.hero_title }}</h1>
+        <p class="home-hero-text">{{ .Params.hero_text }}</p>
+        <div class="home-actions" aria-label="Explore EICRL">
+          <a class="home-button home-button-primary" href="{{ "/research/" | relURL }}">Explore our research</a>
+          <a class="home-button home-button-secondary" href="{{ "/notes/applying-for-a-phd-with-me/" | relURL }}">Join or collaborate</a>
+        </div>
+        <p class="home-affiliation-line">
+          <span class="home-status-dot" aria-hidden="true"></span>
+          Based at UNSW Sydney · School of Computer Science and Engineering
+        </p>
+      </div>
 
-  <div class="page home{{ if ne $posts.enable false }} posts{{ end }}">
-    {{- /* Profile */ -}}
-    {{- if ne $profile.enable false -}}
-      {{- partial "home/profile.html" . -}}
-    {{- end -}}
+      <figure class="home-hero-visual">
+        <div class="home-hero-drawing">
+          <img class="home-hero-image home-hero-image-light" src="{{ "/images/l1gt-500-light-001.png" | relURL }}" alt="" width="1600" height="1132" fetchpriority="high">
+          <img class="home-hero-image home-hero-image-dark" src="{{ "/images/l1gt-500-dark-001.png" | relURL }}" alt="" width="1600" height="1132" aria-hidden="true">
+        </div>
+        <figcaption><span>Research platform</span> L1-GT wheeled biped</figcaption>
+      </figure>
+    </section>
 
-    {{- /* Content */ -}}
-    {{- if .Content -}}
-      <div class="single">
-        <div class="content" id="content">
-          {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
+    <section class="home-section home-research" aria-labelledby="home-research-title">
+      <div class="home-section-heading">
+        <div>
+          <p class="home-kicker">Research</p>
+          <h2 id="home-research-title">Intelligence that works in the physical world</h2>
+        </div>
+        <p>Our work connects learning, reasoning and control with the constraints that make real robots difficult—and useful.</p>
+      </div>
+      <div class="home-theme-grid">
+        {{- range .Params.research_themes -}}
+          <a class="home-theme-card" href="{{ .url | relURL }}">
+            <span class="home-card-number">{{ .number }}</span>
+            <h3>{{ .title }}</h3>
+            <p>{{ .summary }}</p>
+            <span class="home-card-link">Explore theme <span aria-hidden="true">→</span></span>
+          </a>
+        {{- end -}}
+      </div>
+    </section>
+
+    <section class="home-section home-projects" aria-labelledby="home-projects-title">
+      <div class="home-section-heading home-section-heading-inline">
+        <div>
+          <p class="home-kicker">Selected work</p>
+          <h2 id="home-projects-title">Projects built to be tested</h2>
+        </div>
+        <a class="home-text-link" href="{{ "/projects/" | relURL }}">View all projects <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="home-project-grid">
+        {{- range .Params.featured_projects -}}
+          <article class="home-project-card">
+            <a href="{{ .url | relURL }}">
+              <div class="home-project-image-wrap">
+                <img src="{{ .image | relURL }}" alt="{{ .alt }}" loading="lazy" decoding="async">
+              </div>
+              <div class="home-project-copy">
+                <p class="home-project-label">{{ .label }}</p>
+                <h3>{{ .title }}</h3>
+                <p>{{ .summary }}</p>
+                <span class="home-card-link">Open project <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+        {{- end -}}
+      </div>
+    </section>
+
+    <section class="home-section home-highlights" aria-labelledby="home-highlights-title">
+      <div class="home-section-heading home-section-heading-inline">
+        <div>
+          <p class="home-kicker">Lab notes</p>
+          <h2 id="home-highlights-title">Recent work and results</h2>
+        </div>
+        <a class="home-text-link" href="{{ "/news/" | relURL }}">All news <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="home-highlight-list">
+        {{- range .Params.highlights -}}
+          <article class="home-highlight-item">
+            <a href="{{ .url | relURL }}">
+              <p class="home-highlight-period">{{ .period }}</p>
+              <div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .summary }}</p>
+              </div>
+              <span class="home-highlight-arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+        {{- end -}}
+      </div>
+    </section>
+
+    <section class="home-people" aria-labelledby="home-people-title">
+      <div class="home-people-lead">
+        <img src="{{ "/images/oliver.jpeg" | relURL }}" alt="Associate Professor Oliver Obst" width="225" height="225" loading="lazy" decoding="async">
+        <div>
+          <p class="home-kicker">People</p>
+          <h2 id="home-people-title">A focused, collaborative lab</h2>
+          <p>Led by Associate Professor Oliver Obst, EICRL brings together researchers working across robotics, machine learning and intelligent physical systems.</p>
+          <a class="home-text-link home-text-link-light" href="{{ "/people/" | relURL }}">Meet the lab <span aria-hidden="true">→</span></a>
         </div>
       </div>
-    {{- end -}}
+      <div class="home-unsw-panel">
+        <p class="home-kicker">UNSW Sydney</p>
+        <h3>Research grounded in engineering practice</h3>
+        <p>We work within the School of Computer Science and Engineering and collaborate across universities, disciplines and real-world application areas.</p>
+        <a href="https://www.unsw.edu.au/staff/oliver-obst">UNSW researcher profile <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
 
-    {{- /* Paginate */ -}}
-    {{- if ne $posts.enable false -}}
-      {{- $pages := .Site.Store.Get "mainSectionPages" -}}
-      {{- if .Site.Params.page.hiddenFromHomePage -}}
-        {{- $pages = where $pages "Params.hiddenfromhomepage" false -}}
-      {{- else -}}
-        {{- $pages = where $pages "Params.hiddenfromhomepage" "!=" true -}}
-      {{- end -}}
-      {{- with $posts.paginate | default .Site.Params.paginate -}}
-        {{- $pages = $.Paginate $pages . -}}
-      {{- else -}}
-        {{- $pages = .Paginate $pages -}}
-      {{- end -}}
-      {{- range $pages.Pages -}}
-        {{- .Render "summary" -}}
-      {{- end -}}
-      {{- partial "paginator.html" . -}}
-    {{- end -}}
+    <section class="home-contact" aria-labelledby="home-contact-title">
+      <div>
+        <p class="home-kicker">Work with us</p>
+        <h2 id="home-contact-title">Bring us a difficult physical-intelligence problem.</h2>
+      </div>
+      <div class="home-contact-action">
+        <p>We welcome conversations with prospective research students, collaborators and industry partners.</p>
+        <a class="home-button home-button-primary" href="mailto:o.obst@unsw.edu.au?subject=EICRL%20enquiry">Start a conversation</a>
+      </div>
+    </section>
   </div>
 {{- end -}}

@@ -4,3 +4,4 @@ resources/
 .saves/
 *.orig
 *~
+.DS_Store
