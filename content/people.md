@@ -4,17 +4,17 @@ toc: true
 date: 2026-02-08T17:22:00+11:00
 
 ---
-# Academics
+## Academics
 
 {{< figure src="/images/oliver.jpeg" caption="Oliver Obst" alt="A/Prof Oliver Obst" class="left" >}}
 
 <br class="clear" />
 
-# HDR Research students
+## HDR Research students
 
 {{< figure src="/images/person-placeholder.svg" caption="Tongzhong Shi, MPhil student" alt="Tongzhong Shi" class="left" >}}
 
 <br class="clear" />
 
-# Visiting fellows
+## Visiting fellows
 {{< figure src="/images/frieder.jpeg" caption="Frieder Stolzenburg" alt="Prof Frieder Stolzenburg" class="left" >}}

@@ -7,7 +7,7 @@ tags: ["news"]
 draft: false
 ---
 
-### Apr 2026
+## Apr 2026
 
 rUNSWift will be taking part in the new RoboCup Humanoid Soccer League with our Booster robots, and we will also compete in the RoboCup@Home League.
 
@@ -16,9 +16,9 @@ RoboCup 2026 will be held from 30 June to 6 July 2026 at Songdo Convensia in Inc
 Photo: Matildas game in Sydney, for a bit of football inspiration.
 ![til it's done](/images/202604-matildas.jpeg)
 
-### Mar 2026
+## Mar 2026
 
-#### robotics in care: poster accepted
+### robotics in care: poster accepted
 
 Our poster on **robotic assistance in physical care**, a joint project between **UNSW** and **Western Sydney University**, has been accepted for presentation at the **26th IEEE/ACM CCGRID 2026**.
 
@@ -27,7 +27,7 @@ In the project we explore how robotic systems can support physical care tasks th
 Our poster is titled 'Edge-Based Perception-Driven Robotic System for Assistive Patient Care'. 
 We look forward to the poster session and the discussions around safe and useful robotics for direct care settings.
 
-#### muesli-bt v0.4.0 and muesli-studio v0.2.0 released
+### muesli-bt v0.4.0 and muesli-studio v0.2.0 released
 
 We have released **muesli-bt v0.4.0** and **muesli-studio v0.2.0**.
 
@@ -45,7 +45,7 @@ Studio:
 [https://github.com/unswei/muesli-studio/](https://github.com/unswei/muesli-studio/)
 
 
-### Feb 2026
+## Feb 2026
 
 We are pleased to welcome Prof Frieder Stolzenburg to UNSW Sydney this month.
 

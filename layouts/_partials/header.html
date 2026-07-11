@@ -39,7 +39,7 @@
        {{- end -}}
      </span>	  
     </div>
-    <nav>
+    <nav aria-label="Primary navigation">
       <ul class="menu">
         {{- range .Site.Menus.main -}}
           {{- $url := .URL -}}
@@ -49,11 +49,22 @@
           {{- with .Page -}}
             {{- $url = .RelPermalink -}}
           {{- end -}}
+          {{- $isExact := eq $.RelPermalink $url -}}
+          {{- $isDescendant := and (not $isExact) (ne $url "/") (hasPrefix $.RelPermalink $url) -}}
+          {{- $isCurrent := or ($.IsMenuCurrent `main` .) ($.HasMenuCurrent `main` .) $isExact $isDescendant -}}
+          {{- $currentValue := "" -}}
+          {{- if $isExact -}}
+            {{- $currentValue = "page" -}}
+          {{- else if $isCurrent -}}
+            {{- $currentValue = "location" -}}
+          {{- end -}}
           {{- if (ne .Params.Draft true) | or $buildDrafts | and (ne .Params.Type "mobile") -}}
-            <li class="menu-item{{ if $.IsMenuCurrent `main` . | or ($.HasMenuCurrent `main` .) | or (eq $.RelPermalink $url) }} active{{ end }}{{ with .Params.Class }} {{ . }}{{ end }}{{ if .HasChildren }} has-children{{ end }}">
+            <li class="menu-item{{ if $isCurrent }} active{{ end }}{{ with .Params.Class }} {{ . }}{{ end }}{{ if .HasChildren }} has-children{{ end }}">
               <a class="menu-link"
                 {{- with $url }} href="{{ $url }}"{{ else }} href="javascript:void(0);"{{ end }}
                 {{- with .Title }} title="{{ . }}"{{ end }}
+                {{- with .Params.AriaLabel }} aria-label="{{ . }}"{{ end }}
+                {{- with $currentValue }} aria-current="{{ . }}"{{ end }}
                 {{- if (urls.Parse $url).Host }} rel="noopener noreferrer" target="_blank"{{ end -}}
               >
                 {{- with .Pre -}}{{- . | safeHTML }} {{ end }}
@@ -72,14 +83,19 @@
                     {{- with $v.Page -}}
                       {{- $url = .RelPermalink -}}
                     {{- end -}}
+                    {{- $isExact := eq $.RelPermalink $url -}}
+                    {{- $isDescendant := and (not $isExact) (ne $url "/") (hasPrefix $.RelPermalink $url) -}}
+                    {{- $isCurrent := or ($.IsMenuCurrent `main` $v) ($.HasMenuCurrent `main` $v) $isExact $isDescendant -}}
                     {{- if (ne $v.Params.Draft true) | or $buildDrafts | and (ne $v.Params.Type "mobile") -}}
                       {{- if $k | and $v.Params.Divided -}}
                         <li class="menu-item-divider" aria-hidden="true"></li>
                       {{- end -}}
-                      <li class="menu-item{{ if $.IsMenuCurrent `main` $v | or ($.HasMenuCurrent `main` $v) | or (eq $.RelPermalink $url) }} active{{ end }}{{ with $v.Params.Class }} {{ . }}{{ end }}">
+                      <li class="menu-item{{ if $isCurrent }} active{{ end }}{{ with $v.Params.Class }} {{ . }}{{ end }}">
                         <a class="menu-link"
                           {{- with $url }} href="{{ $url }}"{{ else }} href="javascript:void(0);"{{ end }}
                           {{- with $v.Title }} title="{{ . }}"{{ end }}
+                          {{- with $v.Params.AriaLabel }} aria-label="{{ . }}"{{ end }}
+                          {{- if $isExact }} aria-current="page"{{ else if $isCurrent }} aria-current="location"{{ end }}
                           {{- if (urls.Parse $url).Host }} rel="noopener noreferrer" target="_blank"{{ end -}}
                         >
                           {{- with $v.Pre -}}{{- . | safeHTML }} {{ end }}
@@ -112,8 +128,10 @@
             </span>
           </li>
         {{- end -}}
-        <li class="menu-item theme-switch" title="{{ T "header.switchTheme" }}">
-          {{ dict "Class" "fa-solid fa-adjust fa-fw" | partial "plugin/icon.html" }}
+        <li class="menu-item menu-control-item">
+          <button type="button" class="menu-control theme-switch" aria-label="{{ T "header.switchTheme" }}" aria-pressed="false" title="{{ T "header.switchTheme" }}">
+            {{ dict "Class" "fa-solid fa-adjust fa-fw" | partial "plugin/icon.html" }}
+          </button>
         </li>
         {{- if hugo.IsMultilingual -}}
           <li class="menu-item language-switch">
@@ -193,11 +211,11 @@
         {{- end -}}
        </span>	  
     </div>
-      <div class="menu-toggle" id="menu-toggle-mobile">
-        <span></span><span></span><span></span>
-      </div>
+      <button type="button" class="menu-toggle" id="menu-toggle-mobile" aria-controls="menu-mobile" aria-expanded="false" aria-label="Open navigation">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
     </div>
-    <nav>
+    <nav aria-label="Primary navigation">
       <ul class="menu" id="menu-mobile">
         {{- if .Site.Params.search.enable -}}
           <li class="search-wrapper">
@@ -227,13 +245,24 @@
           {{- with .Page -}}
             {{- $url = .RelPermalink -}}
           {{- end -}}
+          {{- $isExact := eq $.RelPermalink $url -}}
+          {{- $isDescendant := and (not $isExact) (ne $url "/") (hasPrefix $.RelPermalink $url) -}}
+          {{- $isCurrent := or ($.IsMenuCurrent `main` .) ($.HasMenuCurrent `main` .) $isExact $isDescendant -}}
+          {{- $currentValue := "" -}}
+          {{- if $isExact -}}
+            {{- $currentValue = "page" -}}
+          {{- else if $isCurrent -}}
+            {{- $currentValue = "location" -}}
+          {{- end -}}
           {{- if (ne .Params.Draft true) | or $buildDrafts | and (ne .Params.Type "desktop") -}}
-            <li class="menu-item{{ if $.IsMenuCurrent `main` . | or ($.HasMenuCurrent `main` .) | or (eq $.RelPermalink $url) }} active{{ end }}{{ with .Params.Class }} {{ . }}{{ end }}">
+            <li class="menu-item{{ if $isCurrent }} active{{ end }}{{ with .Params.Class }} {{ . }}{{ end }}">
               {{- if .HasChildren -}}
                 <span class="nested-item">
                   <a class="menu-link"
                     {{- with $url }} href="{{ $url }}"{{ else }} href="javascript:void(0);"{{ end }}
                     {{- with .Title }} title="{{ . }}"{{ end }}
+                    {{- with .Params.AriaLabel }} aria-label="{{ . }}"{{ end }}
+                    {{- with $currentValue }} aria-current="{{ . }}"{{ end }}
                     {{- if (urls.Parse $url).Host }} rel="noopener noreferrer" target="_blank"{{ end -}}
                   >
                     {{- with .Pre -}}{{- . | safeHTML }} {{ end }}
@@ -249,17 +278,22 @@
                     {{- with $url -}}
                       {{- $url = . | relLangURL -}}
                     {{- end -}}
-                    {{- with $v.Page -}}
-                      {{- $url = .RelPermalink -}}
-                    {{- end -}}
-                    {{- if (ne $v.Params.Draft true) | or $buildDrafts | and (ne $v.Params.Type "desktop") -}}
+                      {{- with $v.Page -}}
+                        {{- $url = .RelPermalink -}}
+                      {{- end -}}
+                      {{- $isExact := eq $.RelPermalink $url -}}
+                      {{- $isDescendant := and (not $isExact) (ne $url "/") (hasPrefix $.RelPermalink $url) -}}
+                      {{- $isCurrent := or ($.IsMenuCurrent `main` $v) ($.HasMenuCurrent `main` $v) $isExact $isDescendant -}}
+                      {{- if (ne $v.Params.Draft true) | or $buildDrafts | and (ne $v.Params.Type "desktop") -}}
                       {{- if $k | and $v.Params.Divided -}}
                         <li class="menu-item menu-item-divider" aria-hidden="true"></li>
                       {{- end -}}
-                      <li class="menu-item{{ if $.IsMenuCurrent `main` $v | or ($.HasMenuCurrent `main` $v) | or (eq $.RelPermalink $url) }} active{{ end }}{{ with $v.Params.Class }} {{ . }}{{ end }}">
+                      <li class="menu-item{{ if $isCurrent }} active{{ end }}{{ with $v.Params.Class }} {{ . }}{{ end }}">
                         <a class="menu-link"
                           {{- with $url }} href="{{ $url }}"{{ else }} href="javascript:void(0);"{{ end }}
                           {{- with $v.Title }} title="{{ . }}"{{ end }}
+                          {{- with $v.Params.AriaLabel }} aria-label="{{ . }}"{{ end }}
+                          {{- if $isExact }} aria-current="page"{{ else if $isCurrent }} aria-current="location"{{ end }}
                           {{- if (urls.Parse $url).Host }}rel="noopener noreferrer" target="_blank"{{ end -}}
                         >
                           {{- with $v.Pre -}}{{- . | safeHTML }} {{ end }}
@@ -275,6 +309,8 @@
                 <a class="menu-link"
                   {{- with $url }} href="{{ $url }}"{{ else }} href="javascript:void(0);"{{ end }}
                   {{- with .Title }} title="{{ . }}"{{ end }}
+                  {{- with .Params.AriaLabel }} aria-label="{{ . }}"{{ end }}
+                  {{- with $currentValue }} aria-current="{{ . }}"{{ end }}
                   {{- if (urls.Parse $url).Host }} rel="noopener noreferrer" target="_blank"{{ end -}}
                 >
                   {{- with .Pre -}}{{- . | safeHTML }} {{ end }}
@@ -287,7 +323,7 @@
           {{- end -}}
         {{- end -}}
         <li class="menu-item menu-system">
-          <span class="menu-system-item theme-switch" title="{{ T "header.switchTheme" }}">{{ dict "Class" "fa-solid fa-adjust fa-fw" | partial "plugin/icon.html" }}</span>
+          <button type="button" class="menu-system-item theme-switch" aria-label="{{ T "header.switchTheme" }}" aria-pressed="false" title="{{ T "header.switchTheme" }}">{{ dict "Class" "fa-solid fa-adjust fa-fw" | partial "plugin/icon.html" }}</button>
           {{- if hugo.IsMultilingual -}}
             <span class="menu-system-item language-switch">
               <span role="button" aria-label="{{ T "header.selectLanguage" }}" title="{{ T "header.selectLanguage" }}">

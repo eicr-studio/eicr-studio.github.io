@@ -6,15 +6,9 @@ lastmod: 2026-07-11
 draft: false
 ---
 
-# RobotCFPs: **Calls for Papers**
-
 Selected calls with strong relevance to robotics, robot learning, artificial intelligence and related local research activity.
 
 <style>
-.page.single.special > .header {
-  display: none;
-}
-
 .page.single.special .content .table-wrapper > table {
   font-size: 0.8rem;
 }

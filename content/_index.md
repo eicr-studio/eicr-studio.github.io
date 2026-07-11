@@ -10,7 +10,8 @@ params:
 
 ---
 
-**We make robots that stay safe and useful over time.**  
+# We make robots that stay safe and useful over time.
+
 We study how robots learn, plan, and act reliably, individually and in teams.
 
 Our research focuses on:
