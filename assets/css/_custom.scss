@@ -470,6 +470,88 @@ main.fi-container:not(.fi-container-home) > .page {
 }
 .clear { clear: both; }
 
+/* People profiles */
+.people-page {
+  --eicrl-reading: 74ch;
+}
+
+.person-card {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  gap: var(--eicrl-space-4);
+  align-items: center;
+  border-top: 1px solid var(--eicrl-border);
+  padding: var(--eicrl-space-4) 0;
+}
+
+.person-card-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--eicrl-radius-md);
+  object-fit: cover;
+}
+
+.person-card-body {
+  min-width: 0;
+}
+
+.people-page .content .person-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+}
+
+.people-page .content .person-card-role {
+  margin: 0;
+  color: var(--eicrl-link);
+  font-family: "Oswald", "Inter", system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.people-page .content .person-card-summary {
+  max-width: 54ch;
+  margin: var(--eicrl-space-3) 0;
+  color: var(--eicrl-muted);
+  line-height: 1.6;
+}
+
+.person-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+}
+
+.people-page .content .person-card-links a {
+  font-size: 0.9rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.person-card-text {
+  grid-template-columns: 1fr;
+  border-left: 3px solid var(--eicrl-accent);
+  padding-left: var(--eicrl-space-4);
+}
+
+@media (max-width: 620px) {
+  .person-card {
+    grid-template-columns: 1fr;
+  }
+
+  .person-card-image {
+    width: 55vw;
+    max-width: 11rem;
+  }
+
+  .person-card-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .projects-list {
   display: flex;
   flex-direction: column;
@@ -997,6 +1079,10 @@ main.fi-container.fi-container-home {
   background: var(--home-visual);
 }
 
+.home-hero-visual-render {
+  background: #909090;
+}
+
 .home-hero-visual::before {
   position: absolute;
   top: 1.35rem;
@@ -1023,6 +1109,15 @@ main.fi-container.fi-container-home {
   max-width: none;
   height: auto;
   transform: translate(-51%, -52%);
+}
+
+.home-hero-visual .home-hero-image-render {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: none;
 }
 
 .home-hero-image-dark {
