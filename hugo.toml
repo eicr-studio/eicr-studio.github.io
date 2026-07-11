@@ -1558,8 +1558,6 @@ lazyLoad = true
 [params.page.library]
 
 [params.page.library.css]
-
-someCSS = "css/custom.css"
 # located in "assets/"
 # Or
 # someCSS = "https://cdn.example.com/some.css"

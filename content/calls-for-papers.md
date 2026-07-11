@@ -4,27 +4,10 @@ description: "Selected open calls for papers in AI, machine learning, data scien
 date: 2026-07-11
 lastmod: 2026-07-11
 draft: false
+pageStyle: "wide"
 ---
 
 Selected calls with strong relevance to robotics, robot learning, artificial intelligence and related local research activity.
-
-<style>
-.page.single.special .content .table-wrapper > table {
-  font-size: 0.8rem;
-}
-
-.page.single.special .content .table-wrapper > table th:first-child,
-.page.single.special .content .table-wrapper > table td:first-child {
-  width: 6.5rem;
-  white-space: nowrap;
-}
-
-.page.single.special .content .table-wrapper > table th:nth-child(5):not(:last-child),
-.page.single.special .content .table-wrapper > table td:nth-child(5):not(:last-child) {
-  width: 8rem;
-  white-space: nowrap;
-}
-</style>
 
 <!-- CFP-RADAR:START -->
 
