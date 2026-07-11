@@ -12,7 +12,7 @@ Our long-term goal is to understand and engineer physical and collective intelli
 </div>
 <div class="research-note-link" role="complementary" aria-label="Related note">
   <p class="research-note-kicker">Note</p>
-  <a href="/notes/applying-for-a-phd-with-me/">Applying for a PhD with me</a>
+  <a href="/join/">Join EICRL</a>
 </div>
 </div>
 
@@ -31,6 +31,8 @@ Work in this direction includes:
 
 The direction typically combines modern simulation with targeted real-robot experimentation.
 
+Related projects: [L1-GT](/projects/l1-gt/) · [Robotic assistance in physical care](/projects/assistive-care/)
+
 ***
 
 ## Collective robotics under physical uncertainty
@@ -47,6 +49,8 @@ Key themes include:
 
 The main constraints in this area are well understood, but still not solved in a way that transfers cleanly to physical robot teams.
 
+Related projects: [muesli-bt](/projects/muesli-bt/) · [L1-GT](/projects/l1-gt/)
+
 ***
 
 ## Learning and uncertainty for physical systems
@@ -56,5 +60,7 @@ This research stream investigates how machine learning can support prediction, s
 Core themes include physics-informed neural networks, neural operators, graph-based surrogates, and differentiable programming. A particular emphasis is placed on uncertainty quantification and probabilistic methods that enable safe deployment in high-stakes applications.
 
 Current work includes modelling and control of composite manufacturing processes (as part of a funded ARC Discovery Project), with broader relevance to robotics, scientific computing, and real-time monitoring. Typical challenges involve learning from sparse or noisy sensor data, reducing simulation costs, and integrating learned models into control or planning pipelines.
+
+Related projects: [Smart manufacturing for composite structures](/projects/smart-manufacturing/) · [Five-bar linkage design tools](/projects/fivebar/)
 
 ***

@@ -28,6 +28,12 @@ A key part of this work is uncertainty. In manufacturing, it is not enough to pr
 
 ## investigators
 
-- Oliver Obst
+- [Oliver Obst](/people/#oliver-obst)
 - Liyong Tong (USyd)
 - Brian Falzon (WSU)
+
+## related
+
+- Research: [learning and uncertainty for physical systems](/research/#learning-and-uncertainty-for-physical-systems)
+- Outputs: [publications and working papers](/publications/)
+- More work: [EICRL projects](/projects/)

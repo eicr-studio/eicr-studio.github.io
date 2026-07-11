@@ -36,6 +36,7 @@ enableEmoji = true
 # if set, the MainSections method on the Site object returns the given sections,
 # otherwise it returns the section with the most pages.
 mainSections = ["posts"]
+disableKinds = ["taxonomy", "term"]
 
 
 # -------------------------------------------------------------------------------------
@@ -73,7 +74,7 @@ weight = 8
 [[menu.main]]
 identifier = "join"
 name = "Join"
-url = "/notes/applying-for-a-phd-with-me/"
+url = "/join/"
 title = "Join the lab"
 weight = 10
 
@@ -86,32 +87,18 @@ weight = 12
 [[menu.main]]
 identifier = "contact"
 name = "Contact"
-url = "mailto:o.obst@unsw.edu.au?subject=EICRL%20enquiry"
+url = "/contact/"
 title = "Contact EICRL"
-weight = 14
+weight = 16
 [menu.main.params]
 class = "menu-item-contact"
 
 [[menu.main]]
-identifier = "github"
-url = "https://github.com/unswei"
-name = ""
-weight = 16
-
-[menu.main.params]
-icon = "fa-brands fa-github fa-fw"
-type = "desktop"
-ariaLabel = "EICRL on GitHub"
-
-[[menu.main]]
-identifier = "github-mobile"
-url = "https://github.com/unswei"
-name = "GitHub"
-weight = 16
-
-[menu.main.params]
-icon = "fa-brands fa-github fa-fw"
-type = "mobile"
+identifier = "resources"
+name = "Resources"
+url = "/resources/"
+title = "Research resources and software"
+weight = 14
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
@@ -373,8 +360,6 @@ permalinkable = true
 home = [
   "html",
   "rss",
-  "archives",
-  "offline",
   "search"
 ]
 page = [
@@ -385,21 +370,6 @@ section = [
   "html",
   "rss"
 ]
-taxonomy = [ "html" ]
-term = [
-  "html",
-  "rss"
-]
-
-# -------------------------------------------------------------------------------------
-# Taxonomies Configuration
-# See: https://gohugo.io/content-management/taxonomies/#configure-taxonomies
-# -------------------------------------------------------------------------------------
-
-[taxonomies]
-category = "categories"
-tag = "tags"
-collection = "collections"
 
 # -------------------------------------------------------------------------------------
 # Theme Core Configuration
@@ -545,7 +515,7 @@ mobileMode = "auto"
 # URL of the LOGO
 logo = "/images/eicrl-logo-32x32.png"
 # title name
-name = ""
+name = "EICRL"
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = ""
 # you can add extra information after the name (HTML format is supported), such as icons
@@ -556,8 +526,8 @@ typeit = false
 # FixIt 0.2.12 | NEW Header subtitle config
 [params.header.subtitle]
 # subtitle name, location
-name = "research @ UNSW"
-loc = " "
+name = "Robotics research at UNSW Sydney"
+loc = ""
 # whether to use typeit animation for subtitle name
 typeit = false
 

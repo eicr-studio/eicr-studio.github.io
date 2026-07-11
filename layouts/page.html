@@ -5,7 +5,7 @@
 
 {{- define "content" -}}
   {{- $params := partial "function/params.html" -}}
-  <article class="page single special">
+  <article class="page single special{{ with .Params.pageClass }} {{ . }}{{ end }}">
     <div class="header">
       <h1 class="single-title">{{- cond (.Param "capitalizeTitles") (title .Title) .Title -}}</h1>
       {{- with $params.subtitle -}}<p class="single-subtitle">{{ . | $.RenderString }}</p>{{- end -}}

@@ -11,5 +11,14 @@ It is old-school in how you write behaviours (simple, explicit, hackable), but p
 
 Technically, muesli-bt is an embeddable runtime for Lisp-authored behaviour trees, with bounded-time planning during ticks and explicit async calls (including cancellation and safe fallback patterns). It is designed to integrate cleanly into C++ hosts and to support tooling that can inspect, replay, and debug real robot runs.
 
-- docs: https://unswei.github.io/muesli-bt/
-- code: https://github.com/unswei/muesli-bt
+## outputs
+
+- [Read the documentation](https://unswei.github.io/muesli-bt/)
+- [View the source code](https://github.com/unswei/muesli-bt)
+- [Read the release update](/news/#muesli-bt-v040-and-muesli-studio-v020-released)
+
+## related
+
+- Research: [collective robotics under physical uncertainty](/research/#collective-robotics-under-physical-uncertainty)
+- People: [Oliver Obst](/people/#oliver-obst)
+- More work: [EICRL projects](/projects/)

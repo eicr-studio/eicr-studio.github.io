@@ -16,5 +16,13 @@ This project collects small research tools for exploring a planar five-bar linka
 
 The browser version provides an interactive simulator and fixed-branch singularity visualisation that run directly from GitHub Pages. The Python tools add Matplotlib-based simulation, 3D reachability experiments, and sampled configuration searches.
 
-- interactive tools: https://unswei.github.io/fivebar/
-- code: https://github.com/unswei/fivebar
+## outputs
+
+- [Open the interactive tools](https://unswei.github.io/fivebar/)
+- [View the source code](https://github.com/unswei/fivebar)
+
+## related
+
+- Research: [learning and uncertainty for physical systems](/research/#learning-and-uncertainty-for-physical-systems)
+- People: [Oliver Obst](/people/#oliver-obst)
+- More work: [EICRL projects](/projects/)

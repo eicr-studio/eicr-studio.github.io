@@ -24,3 +24,9 @@ The next stage of the project will study how such systems can interact more safe
 
 - UNSW
 - Western Sydney University
+
+## related
+
+- Research: [data-efficient embodied learning and manipulation](/research/#data-efficient-embodied-learning-for-manipulation)
+- People: [Oliver Obst](/people/#oliver-obst)
+- Outputs: [accepted CCGRID 2026 poster](/publications/) and [project news](/news/#robotics-in-care-poster-accepted)

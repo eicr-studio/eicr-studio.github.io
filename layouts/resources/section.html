@@ -1,0 +1,36 @@
+{{- define "title" -}}
+  {{- .Title -}}
+  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
+{{- end -}}
+
+{{- define "content" -}}
+  <div class="page archive resources-page">
+    <div class="header">
+      <h1 class="single-title">Resources</h1>
+      <p class="single-subtitle">Public research tools, software and opportunity tracking from EICRL.</p>
+    </div>
+
+    <div class="resource-grid">
+      <a class="resource-card" href="{{ "/resources/robotcfps/" | relURL }}">
+        <p class="resource-card-kicker">Opportunity tracking</p>
+        <h2>RobotCFPs</h2>
+        <p>Selected open calls in robotics, robot learning, AI and related regional research.</p>
+        <span>View current calls <span aria-hidden="true">→</span></span>
+      </a>
+
+      <a class="resource-card" href="https://github.com/unswei">
+        <p class="resource-card-kicker">Open research software</p>
+        <h2>GitHub</h2>
+        <p>Code, experimental platforms and tools developed or maintained by EICRL.</p>
+        <span>Browse repositories <span aria-hidden="true">↗</span></span>
+      </a>
+
+      <a class="resource-card" href="{{ "/projects/" | relURL }}">
+        <p class="resource-card-kicker">Working systems</p>
+        <h2>Project tools</h2>
+        <p>Interactive mechanisms, robot platforms and behaviour-system documentation.</p>
+        <span>Explore projects <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </div>
+{{- end -}}
