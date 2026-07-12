@@ -1,5 +1,5 @@
 ---
-title: "robotic assistance in physical care"
+title: "Robotic assistance in physical care"
 date: 2026-03-23
 draft: false
 summary: "A project on safe, perception-driven robotic assistance for physical care."
@@ -12,21 +12,28 @@ tags:
   - manipulation
 ---
 
-This joint project with Western Sydney University investigates how robots can assist safely and usefully in physical care. The focus is on perception-driven manipulation in close proximity to people, with particular attention to tasks where a robot may support carers through direct physical interaction.
+## Problem
+
+How can robots assist safely and usefully in physical care, particularly when perception-driven manipulation happens close to people? This joint project investigates tasks where a robot may support carers through direct physical interaction.
+
+## Status
+
+The current system is an experimental testbed. The next stage will study how it can interact more safely and effectively with people during physical care tasks and how perception and control can support dependable assistance in realistic care environments.
+
+## Partner
+
+- Western Sydney University
+
+## Approach
 
 Our current platform combines a collaborative robotic arm, stereo vision, motion planning, and local control in a closed-loop perception-to-action system. It is being used as an experimental testbed for studying how robots can detect relevant parts of a care scenario, plan appropriate movements, and act reliably in real time.
 
 For our lab, this project sits at the intersection of embodied intelligence, robot perception, and human-centred autonomy. We are interested in understanding what is required for robots to become safe and genuinely useful partners in care settings, including robust perception, predictable behaviour, workspace awareness, and careful integration of sensing, planning, and control.
 
-The next stage of the project will study how such systems can interact more safely and effectively with people during physical care tasks, and how perception and control can be improved to support dependable assistance in realistic care environments.
+## Results and outputs
 
-## collaboration
+Early work has been accepted as a poster at CCGRID 2026. See the [publication record](/publications/#2026) or [project update](/news/robotics-in-care-poster/).
 
-- UNSW
-- Western Sydney University
+## Related research
 
-## related
-
-- Research: [data-efficient embodied learning and manipulation](/research/#data-efficient-embodied-learning-for-manipulation)
-- People: [Oliver Obst](/people/#oliver-obst)
-- Outputs: [accepted CCGRID 2026 poster](/publications/) and [project news](/news/#robotics-in-care-poster-accepted)
+[Data-efficient embodied learning and manipulation](/research/#data-efficient-embodied-learning-for-manipulation) · [All EICRL projects](/projects/)

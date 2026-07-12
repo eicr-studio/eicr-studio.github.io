@@ -12,7 +12,9 @@ aliases:
 
 Selected calls with strong relevance to robotics, robot learning, artificial intelligence and related local research activity.
 
-RobotCFPs is a curated research resource rather than a complete conference database. Calls are selected for relevance to EICRL's work, leading AI and robotics venues, and credible Australian or regional research activity. The update date below indicates the most recent review; always confirm deadlines on the linked official page.
+RobotCFPs is a curated research resource rather than a complete conference database. Calls are selected for relevance to EICRL's work, leading AI and robotics venues, and credible Australian or regional research activity.
+
+The list is reviewed periodically rather than on a fixed schedule. The update date below shows when it was last checked; always confirm deadlines on the linked official page. **AoE** means *Anywhere on Earth*: unless an official call states otherwise, the deadline closes at 23:59 in the UTC−12 time zone.
 
 <!-- CFP-RADAR:START -->
 

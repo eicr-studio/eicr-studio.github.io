@@ -1,0 +1,24 @@
+{{- define "title" -}}
+  {{- .Title -}}
+  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
+{{- end -}}
+
+{{- define "content" -}}
+  <div class="page archive news-page">
+    <div class="header">
+      <h1 class="single-title">{{ .Title }}</h1>
+      <p class="single-subtitle">{{ .Description }}</p>
+    </div>
+
+    <div class="news-list">
+      {{- range .Pages.ByDate.Reverse -}}
+        <article class="news-card">
+          <p class="news-card-date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Params.summary | default .Summary }}</p>
+          <a class="news-card-link" href="{{ .RelPermalink }}">Read the update <span aria-hidden="true">→</span></a>
+        </article>
+      {{- end -}}
+    </div>
+  </div>
+{{- end -}}

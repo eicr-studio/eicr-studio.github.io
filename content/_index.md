@@ -43,19 +43,18 @@ featured_projects:
     url: "/projects/assistive-care/"
 
 highlights:
+  - period: "July 2026"
+    title: "RoboCup 2026 tests a new generation of humanoid robotics"
+    summary: "New robot platforms, autonomous software and student teamwork under competition pressure."
+    url: "/news/robocup-2026/"
   - period: "March 2026"
     title: "Robotics in care poster accepted at CCGRID 2026"
     summary: "Early results from our UNSW–Western Sydney University collaboration."
-    url: "/news/#robotics-in-care-poster-accepted"
+    url: "/news/robotics-in-care-poster/"
   - period: "March 2026"
     title: "muesli-bt v0.4.0 and muesli-studio v0.2.0 released"
     summary: "New runtime, replay and inspection capabilities for robot behaviour systems."
-    url: "/news/#muesli-bt-v040-and-muesli-studio-v020-released"
-  - period: "February 2026"
-    title: "Frieder Stolzenburg joins UNSW as a Senior Visiting Fellow"
-    summary: "Continuing our collaboration on efficient recurrent neural networks."
-    url: "/news/#feb-2026"
-
+    url: "/news/muesli-bt-and-studio-releases/"
 params:
   author: Oliver Obst
 ---

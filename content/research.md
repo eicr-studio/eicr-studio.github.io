@@ -1,21 +1,39 @@
 ---
 title: "Research directions"
 description: "Research directions in embodied learning, collective robotics and intelligent physical systems at EICRL."
-toc: true
+toc: false
 date: 2025-12-14T18:27:00+11:00
 ---
 Our long-term goal is to understand and engineer physical and collective intelligence in robots, so that robust autonomy emerges from the interaction of body, learning, and structure rather than from computational scale alone.
 
-<h2 id="research-on-this-page">On this page</h2>
-<div class="research-topics-layout">
-<div class="research-topics-list">
-{{% toc %}}
+## Three connected research themes
+
+<div class="research-theme-grid">
+  <article class="research-theme-card">
+    <p class="research-theme-number">01</p>
+    <h3><a href="#data-efficient-embodied-learning-for-manipulation">Embodied learning</a></h3>
+    <p>Data-efficient learning and manipulation grounded in real robot experience.</p>
+  </article>
+  <article class="research-theme-card">
+    <p class="research-theme-number">02</p>
+    <h3><a href="#collective-robotics-under-physical-uncertainty">Collective robotics</a></h3>
+    <p>Reliable coordination for robot teams operating with uncertainty and limited communication.</p>
+  </article>
+  <article class="research-theme-card">
+    <p class="research-theme-number">03</p>
+    <h3><a href="#learning-and-uncertainty-for-physical-systems">Physical intelligence</a></h3>
+    <p>Learning, inference and control for complex physical systems with limited data.</p>
+  </article>
 </div>
-<div class="research-note-link" role="complementary" aria-label="Related note">
-  <p class="research-note-kicker">Note</p>
-  <a href="/join/">Join EICRL</a>
-</div>
-</div>
+
+<aside class="research-join-callout" aria-labelledby="research-join-title">
+  <div>
+    <p class="research-join-kicker">Work with us</p>
+    <h2 id="research-join-title">Interested in research with EICRL?</h2>
+    <p>See current supervision availability, funding expectations and what to include in an enquiry.</p>
+  </div>
+  <a class="content-action" href="/join/">Join the lab</a>
+</aside>
 
 
 ## Data-efficient embodied learning for manipulation

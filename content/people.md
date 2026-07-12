@@ -14,11 +14,12 @@ pageClass: "people-page"
     <h3>Oliver Obst</h3>
     <p class="person-card-role">Associate Professor · EICRL lead</p>
     <p class="person-card-summary">Oliver leads EICRL’s work across embodied learning, collective robotics and intelligent physical systems.</p>
+    <p class="person-card-interests"><strong>Research interests:</strong> embodied learning, collective robotics, uncertainty-aware learning and intelligent physical systems.</p>
     <nav class="person-card-links" aria-label="Oliver Obst profile links">
       <a href="/research/">Research themes</a>
-      <a href="/projects/">Current projects</a>
       <a href="/publications/">Selected publications</a>
       <a href="https://www.unsw.edu.au/staff/oliver-obst">UNSW profile <span aria-hidden="true">↗</span></a>
+      <a href="/contact/">Contact</a>
     </nav>
   </div>
 </article>
@@ -29,6 +30,7 @@ pageClass: "people-page"
   <div class="person-card-body">
     <h3>Tongzhong Shi</h3>
     <p class="person-card-role">MPhil student</p>
+    <p class="person-card-summary">MPhil research student in EICRL.</p>
   </div>
 </article>
 
@@ -39,5 +41,11 @@ pageClass: "people-page"
   <div class="person-card-body">
     <h3>Frieder Stolzenburg</h3>
     <p class="person-card-role">Senior Visiting Fellow</p>
+    <p class="person-card-summary">Frieder is a long-standing collaborator whose work with EICRL connects efficient recurrent neural networks with practical intelligent systems.</p>
+    <p class="person-card-interests"><strong>Research interests:</strong> recurrent neural networks, time-series modelling and learning for robotics.</p>
+    <nav class="person-card-links" aria-label="Frieder Stolzenburg profile links">
+      <a href="/publications/#2025">Selected publication</a>
+      <a href="/news/frieder-stolzenburg-visiting-fellow/">Visit update</a>
+    </nav>
   </div>
 </article>
