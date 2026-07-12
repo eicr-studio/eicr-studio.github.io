@@ -5,7 +5,7 @@ type: "page"
 date: 2025-12-14T18:27:00+11:00
 modified: 2026-07-11T00:00:00+10:00
 
-hero_title: "We make robots that stay safe and useful over time."
+hero_title: "Intelligence that works in the physical world."
 hero_text: "We study how robots learn, plan and act reliably—individually and in teams—by combining physical intelligence, uncertainty-aware learning and real-world experimentation."
 
 research_themes:

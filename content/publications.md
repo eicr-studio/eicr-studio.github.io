@@ -1,5 +1,6 @@
 ---
-title: "publications, preprints, and working papers"
+title: "Publications, preprints and working papers"
+description: "Selected publications, preprints, working papers and presentations from EICRL researchers."
 toc: true
 date: 2026-02-08T17:25:00+11:00
 

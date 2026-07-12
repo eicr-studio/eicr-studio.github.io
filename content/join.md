@@ -1,5 +1,5 @@
 ---
-title: "join the lab"
+title: "Join the lab"
 description: "How to enquire about PhD and MPhil research with EICRL at UNSW Sydney."
 date: 2026-04-28T00:00:00+10:00
 lastmod: 2026-07-11T00:00:00+10:00

@@ -1,5 +1,5 @@
 ---
-title: "contact"
+title: "Contact"
 description: "Contact EICRL at UNSW Sydney about research collaboration, higher degree research, industry partnerships or media enquiries."
 date: 2026-07-11T00:00:00+10:00
 draft: false

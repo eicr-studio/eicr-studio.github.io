@@ -1,5 +1,6 @@
 ---
 title: "People"
+description: "Researchers and visiting fellows in EICRL at UNSW Sydney."
 toc: true
 date: 2026-02-08T17:22:00+11:00
 pageClass: "people-page"

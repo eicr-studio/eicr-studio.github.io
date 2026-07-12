@@ -445,10 +445,6 @@ main.fi-container:not(.fi-container-home) > .page {
     flex-direction: column;
     gap: 0.9rem;
   }
-
-  .research-note-link {
-    order: -1;
-  }
 }
 
 @media (min-width: 1180px) {

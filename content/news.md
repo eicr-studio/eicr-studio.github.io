@@ -1,5 +1,6 @@
 ---
-title: "news"
+title: "News"
+description: "News, releases, research results and lab updates from EICRL at UNSW Sydney."
 date: 2026-03-28
 slug: "news"
 categories: ["news"]
