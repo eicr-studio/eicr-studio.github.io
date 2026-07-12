@@ -1,0 +1,20 @@
+{{- define "title" -}}
+  Page not found {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}
+{{- end -}}
+
+{{- define "content" -}}
+  <article class="page single special error-page">
+    <div class="header">
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1 class="single-title">Page not found</h1>
+    </div>
+    <div class="content" id="content">
+      <p>The page may have moved, changed name or no longer exist. Use one of the links below to continue.</p>
+      <nav class="project-actions" aria-label="Page recovery">
+        <a class="content-action" href="{{ relLangURL "" }}">Return home</a>
+        <a class="content-action content-action-secondary" href="{{ "/research/" | relURL }}">Explore research</a>
+        <a class="content-action content-action-secondary" href="{{ "/contact/" | relURL }}">Contact EICRL</a>
+      </nav>
+    </div>
+  </article>
+{{- end -}}

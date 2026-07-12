@@ -92,4 +92,13 @@
 
     syncThemeState();
   }
+
+  document.querySelectorAll('.heading-element .heading-mark').forEach((anchor) => {
+    const heading = anchor.closest('.heading-element');
+    const title = heading?.querySelector(':scope > span')?.textContent?.trim();
+
+    if (title && !anchor.hasAttribute('aria-label')) {
+      anchor.setAttribute('aria-label', `Link to “${title}”`);
+    }
+  });
 })();
