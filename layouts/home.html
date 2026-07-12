@@ -24,7 +24,7 @@
 
       <figure class="home-hero-visual home-hero-visual-render">
         <div class="home-hero-drawing">
-          <img class="home-hero-image home-hero-image-render" src="{{ "/images/l1-gt-500-render-001.png" | relURL }}" alt="" width="987" height="927" fetchpriority="high">
+          {{- partial "responsive-image.html" (dict "Base" "l1-gt-500-render-001" "Ext" "png" "Widths" (slice 600 987) "Width" 987 "Height" 927 "Alt" "" "Class" "home-hero-image home-hero-image-render" "Loading" "eager" "FetchPriority" "high") -}}
         </div>
         <figcaption><span>Research platform</span> L1-GT wheeled biped</figcaption>
       </figure>
@@ -63,7 +63,7 @@
           <article class="home-project-card">
             <a href="{{ .url | relURL }}">
               <div class="home-project-image-wrap">
-                <img src="{{ .image | relURL }}" alt="{{ .alt }}" loading="lazy" decoding="async">
+                <img src="{{ .image | relURL }}" alt="{{ .alt }}" width="150" height="150" loading="lazy" decoding="async">
               </div>
               <div class="home-project-copy">
                 <p class="home-project-label">{{ .label }}</p>

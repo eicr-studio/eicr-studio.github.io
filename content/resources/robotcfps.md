@@ -33,6 +33,7 @@ _Last updated: 2026-07-11._
 | 2026-08-20 | Tightly Coupled Physical Collaboration in Multi-Robot Systems | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://physcollabot.github.io/) |
 | 2026-08-24 | Unifying Representations for Robot Application Development | AAAI 2026 Fall Symposium Series | Symposium | 2026-11-05<br>to 2026-11-07 | Arlington, USA | [Official call](https://aaai.org/conference/fall-symposia/2026-fall-symposium-series-2/) |
 | 2026-09-01 | Perception and Navigation for Marine Robotics | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://www.marinerobotics.info/) |
+| 2026-09-20 | Australasian Conference on Robotics and Automation | ACRA 2026 | Conference | 2026-11-30<br>to 2026-12-02 | Canberra, Australia | [Official call](https://www.araa.asn.au/conference/acra-2026/) |
 | 2026-10-15 | RoboSoft 2027 main conference | RoboSoft 2027 | Conference | 2027-04-05<br>to 2027-04-09 | Brisbane, Australia | [Official call](https://robosoft27.com/call-for-papers/) |
 
 ## Open journal special issues

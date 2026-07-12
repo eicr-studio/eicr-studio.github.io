@@ -1,0 +1,57 @@
+{{- $organisationID := printf "%s#organisation" .Site.Home.Permalink -}}
+{{- $websiteID := printf "%s#website" .Site.Home.Permalink -}}
+{{- $organisation := dict
+  "@type" "ResearchOrganization"
+  "@id" $organisationID
+  "name" "Embodied Intelligence & Collective Robotics Lab"
+  "alternateName" "EICRL"
+  "url" .Site.Home.Permalink
+  "logo" ("/images/eicrl-logo.svg" | absURL)
+  "parentOrganization" (dict
+    "@type" "CollegeOrUniversity"
+    "name" "UNSW Sydney"
+    "url" "https://www.unsw.edu.au/"
+  )
+-}}
+{{- $website := dict
+  "@type" "WebSite"
+  "@id" $websiteID
+  "url" .Site.Home.Permalink
+  "name" .Site.Title
+  "description" .Site.Params.description
+  "inLanguage" "en-AU"
+  "publisher" (dict "@id" $organisationID)
+-}}
+{{- $pageType := "WebPage" -}}
+{{- if and (eq .Section "news") (not .IsSection) -}}
+  {{- $pageType = "NewsArticle" -}}
+{{- end -}}
+{{- $page := dict
+  "@type" $pageType
+  "@id" .Permalink
+  "url" .Permalink
+  "name" .Title
+  "headline" .Title
+  "description" (.Description | default .Site.Params.description)
+  "inLanguage" "en-AU"
+  "isPartOf" (dict "@id" $websiteID)
+  "publisher" (dict "@id" $organisationID)
+-}}
+{{- with .Params.image -}}
+  {{- $page = merge $page (dict "image" (. | absURL)) -}}
+{{- else -}}
+  {{- $page = merge $page (dict "image" ("/images/l1-gt-500-render-001.png" | absURL)) -}}
+{{- end -}}
+{{- if eq $pageType "NewsArticle" -}}
+  {{- $page = merge $page (dict
+    "author" (dict
+      "@type" "Person"
+      "name" "Oliver Obst"
+      "url" "https://www.unsw.edu.au/staff/oliver-obst"
+    )
+    "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")
+  ) -}}
+{{- end -}}
+{{- $graph := slice $organisation $website $page -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

@@ -9,7 +9,7 @@ pageClass: "people-page"
 ## Academics
 
 <article class="person-card person-card-featured" id="oliver-obst">
-  <img class="person-card-image" src="/images/oliver.jpeg" alt="A/Prof Oliver Obst">
+  <img class="person-card-image" src="/images/oliver.jpeg" alt="A/Prof Oliver Obst" width="225" height="225" loading="lazy" decoding="async">
   <div class="person-card-body">
     <h3>Oliver Obst</h3>
     <p class="person-card-role">Associate Professor · EICRL lead</p>
@@ -37,7 +37,7 @@ pageClass: "people-page"
 ## Visiting fellows
 
 <article class="person-card" id="frieder-stolzenburg">
-  <img class="person-card-image" src="/images/frieder.jpeg" alt="Prof Frieder Stolzenburg">
+  <img class="person-card-image" src="/images/frieder.jpeg" alt="Prof Frieder Stolzenburg" width="225" height="225" loading="lazy" decoding="async">
   <div class="person-card-body">
     <h3>Frieder Stolzenburg</h3>
     <p class="person-card-role">Senior Visiting Fellow</p>

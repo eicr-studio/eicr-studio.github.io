@@ -1,0 +1,9 @@
+{{- $base := .Base -}}
+{{- $ext := .Ext | default "jpeg" -}}
+{{- $widths := .Widths | default (slice 800 1200) -}}
+{{- $loading := .Loading | default "lazy" -}}
+<picture{{ with .PictureClass }} class="{{ . }}"{{ end }}>
+  <source type="image/avif" srcset="{{ range $index, $width := $widths }}{{ if $index }}, {{ end }}{{ printf "/images/%s-%d.avif" $base $width | relURL }} {{ $width }}w{{ end }}" sizes="{{ .Sizes | default "(max-width: 50rem) 100vw, 50rem" }}">
+  <source type="image/webp" srcset="{{ range $index, $width := $widths }}{{ if $index }}, {{ end }}{{ printf "/images/%s-%d.webp" $base $width | relURL }} {{ $width }}w{{ end }}" sizes="{{ .Sizes | default "(max-width: 50rem) 100vw, 50rem" }}">
+  <img{{ with .Class }} class="{{ . }}"{{ end }} src="{{ printf "/images/%s.%s" $base $ext | relURL }}" alt="{{ .Alt }}" width="{{ .Width }}" height="{{ .Height }}" loading="{{ $loading }}" decoding="async"{{ with .FetchPriority }} fetchpriority="{{ . }}"{{ end }}>
+</picture>

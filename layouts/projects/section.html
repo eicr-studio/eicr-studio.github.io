@@ -19,7 +19,7 @@
           <a class="project-card-link" href="{{ .RelPermalink }}">
             <div class="project-thumb">
               {{- with .Params.thumbnail -}}
-                <img class="project-thumb-img" src="{{ . | relURL }}" alt="{{ $project.Title }}">
+                <img class="project-thumb-img" src="{{ . | relURL }}" alt="{{ $project.Title }}" width="150" height="150" loading="lazy" decoding="async">
               {{- else -}}
                 {{ .Title }}
               {{- end -}}

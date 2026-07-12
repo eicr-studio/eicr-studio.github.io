@@ -11,7 +11,7 @@
 # -------------------------------------------------------------------------------------
 
 # website title
-title = "embodied intelligence and collective robotics"
+title = "Embodied Intelligence & Collective Robotics Lab"
 # Hostname (and path) to the root
 baseURL = "https://unswei.github.io/"
 # theme list
@@ -19,13 +19,13 @@ theme = ["FixIt"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
 # language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "en"
+locale = "en-AU"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
 # copyright description used only for seo schema
-copyright = ""
+copyright = "© 2026 Embodied Intelligence & Collective Robotics Lab"
 # whether to use robots.txt
 enableRobotsTXT = true
 # whether to use git commit log
@@ -380,9 +380,9 @@ section = [
 # FixIt 0.2.15 | CHANGED FixIt theme version
 version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
-description = ""
+description = "The Embodied Intelligence and Collective Robotics Lab at UNSW Sydney develops reliable learning, planning and control for robots operating in the physical world."
 # site keywords
-keywords = []
+keywords = ["robotics", "embodied intelligence", "collective robotics", "robot learning", "UNSW Sydney"]
 # site default theme ["light", "dark", "auto"]
 defaultTheme = "dark"
 # which hash function used for SRI, when empty, no SRI is used
@@ -391,7 +391,7 @@ fingerprint = ""
 # NEW date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = []
+images = ["/images/l1-gt-500-render-001.png"]
 # FixIt 0.2.12 | NEW enable PWA
 enablePWA = false
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
@@ -415,13 +415,13 @@ summaryPlainify = false
 enableTranslationMerge = false
 # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
 # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
-disableThemeInject = false
+disableThemeInject = true
 
 # Author Configuration
 [params.author]
-name = "School of Computer Science and Engineering, UNSW, Sydney NSW 2052"
+name = "Oliver Obst"
 email = ""
-link = "https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering"
+link = "https://www.unsw.edu.au/staff/oliver-obst"
 avatar = ""
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
@@ -442,9 +442,9 @@ title = "EICRL"
 # whether to omit favicon resource links
 noFavicon = false
 # modern SVG favicon to use in place of older style .png and .ico files
-svgFavicon = ""
+svgFavicon = "/images/eicrl-logo.svg"
 # Safari mask icon color
-iconColor = ""
+iconColor = "#ffcc00"
 # Windows v8-10 tile color
 tileColor = "#ffcc00"
 
@@ -513,9 +513,9 @@ mobileMode = "auto"
 # Header title config
 [params.header.title]
 # URL of the LOGO
-logo = "/images/eicrl-logo-32x32.png"
+logo = "/images/eicrl-logo.svg"
 # title name
-name = "EICRL"
+name = "Embodied Intelligence & Collective Robotics Lab"
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = ""
 # you can add extra information after the name (HTML format is supported), such as icons
@@ -526,7 +526,7 @@ typeit = false
 # FixIt 0.2.12 | NEW Header subtitle config
 [params.header.subtitle]
 # subtitle name, location
-name = "Robotics research at UNSW Sydney"
+name = "UNSW Sydney"
 loc = ""
 # whether to use typeit animation for subtitle name
 typeit = false
@@ -553,7 +553,7 @@ enable = true
 # whether to show copyright info
 copyright = true
 # whether to show the author
-author = true
+author = false
 # Site creation year
 since = "2026"
 # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
@@ -565,7 +565,7 @@ license = ""
 
 # FixIt 0.3.0 | NEW whether to show Hugo and theme info
 [params.footer.powered]
-enable = true
+enable = false
 hugoLogo = false
 themeLogo = false
 
@@ -883,9 +883,9 @@ sogou = ""
 # Site SEO config
 [params.seo]
 # image URL
-image = ""
+image = "/images/l1-gt-500-render-001.png"
 # thumbnail URL
-thumbnailUrl = ""
+thumbnailUrl = "/images/eicrl-logo-512x512.png"
 
 # Analytics config
 [params.analytics]
@@ -1540,9 +1540,9 @@ accessibility = "js/accessibility.js"
 # Page SEO config
 [params.page.seo]
 # image URL
-images = []
+images = ["/images/l1-gt-500-render-001.png"]
 
 # Publisher info
 [params.page.seo.publisher]
-name = ""
-logoUrl = ""
+name = "Embodied Intelligence & Collective Robotics Lab"
+logoUrl = "/images/eicrl-logo.svg"

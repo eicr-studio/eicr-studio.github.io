@@ -1,0 +1,15 @@
+{{- $widthStrings := split (.Get "widths" | default "800,1200") "," -}}
+{{- $widths := slice -}}
+{{- range $widthStrings -}}
+  {{- $widths = $widths | append (int .) -}}
+{{- end -}}
+{{- partial "responsive-image.html" (dict
+  "Base" (.Get "base")
+  "Ext" (.Get "ext")
+  "Widths" $widths
+  "Width" (.Get "width")
+  "Height" (.Get "height")
+  "Alt" (.Get "alt")
+  "PictureClass" "content-responsive-picture"
+  "Class" "content-responsive-image"
+) -}}

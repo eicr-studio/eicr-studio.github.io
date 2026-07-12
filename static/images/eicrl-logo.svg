@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1000"
+     width="1000"
+     height="1000"
+     role="img"
+     aria-label="Circular black and yellow quadrant symbol with yellow ring">
+  <defs>
+    <clipPath id="outer-circle">
+      <circle cx="500" cy="500" r="490"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#outer-circle)">
+    <circle cx="500" cy="500" r="490" fill="#000000"/>
+
+    <path d="M 500 500
+             L 500 108
+             A 392 392 0 0 0 108 500
+             Z"
+          fill="#FFD001"/>
+
+    <path d="M 500 500
+             L 500 892
+             A 392 392 0 0 0 892 500
+             Z"
+          fill="#FFD001"/>
+
+    <circle cx="500" cy="500" r="441"
+            fill="none"
+            stroke="#FFD001"
+            stroke-width="16"/>
+  </g>
+</svg>

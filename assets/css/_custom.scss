@@ -264,8 +264,8 @@ main.fi-container:not(.fi-container-home) > .page {
 
 #header-desktop .header-title {
   min-width: 0;
-  flex: 1 1 auto;
-  margin-right: 2.5rem;
+  flex: 1 1 24rem;
+  margin-right: 1.5rem;
   overflow: visible;
 }
 
@@ -284,9 +284,9 @@ main.fi-container:not(.fi-container-home) > .page {
 
 .header-title-text {
   font-family: "Oswald", "Inter", system-ui, sans-serif;
-  font-size: 1.15rem;
+  font-size: 0.94rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.035em;
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
@@ -349,7 +349,7 @@ main.fi-container:not(.fi-container-home) > .page {
 
 @media (min-width: 1181px) and (max-width: 1280px) {
   #header-desktop .header-title {
-    margin-right: 1.5rem;
+    margin-right: 0.75rem;
   }
 
   #header-desktop .menu > .menu-item {
@@ -357,7 +357,7 @@ main.fi-container:not(.fi-container-home) > .page {
   }
 
   #header-desktop .menu-link {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
   }
 }
 
@@ -374,27 +374,133 @@ main.fi-container:not(.fi-container-home) > .page {
   }
 
   #header-mobile .header-title-wrapper {
-    max-width: 68vw;
+    max-width: 72vw;
     min-width: 0;
   }
 
   #header-mobile .header-title-text {
-    font-size: 1.05rem;
-    line-height: 1;
-    white-space: nowrap;
+    display: block;
+    max-width: 72vw;
+    font-size: 0.78rem;
+    letter-spacing: 0.025em;
+    line-height: 1.08;
+    text-wrap: balance;
+    white-space: normal;
   }
 
   #header-mobile .header-subtitle {
-    display: block;
-    max-width: 68vw;
-    overflow: hidden;
-    font-size: 0.62rem;
-    text-overflow: ellipsis;
+    display: none;
   }
 
   #header-mobile .header-title .logo {
     width: 2rem;
     height: 2rem;
+  }
+}
+
+/* Institutional footer */
+.eicrl-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f2f0eb;
+  background: #202020;
+}
+
+.eicrl-footer-inner {
+  display: grid;
+  width: calc(100% - (2 * var(--eicrl-gutter)));
+  max-width: 80rem;
+  grid-template-columns: minmax(18rem, 1fr) auto;
+  gap: var(--eicrl-space-5) var(--eicrl-space-6);
+  align-items: end;
+  margin-inline: auto;
+  padding-block: clamp(2.5rem, 5vw, 4rem) var(--eicrl-space-4);
+}
+
+.eicrl-footer-brand {
+  text-align: left;
+}
+
+.eicrl-footer-name {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--eicrl-space-3);
+  color: #f2f0eb;
+  font-family: "Oswald", "Inter", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.eicrl-footer-name:hover {
+  color: var(--eicrl-accent);
+}
+
+.eicrl-footer-name img {
+  flex: 0 0 2.5rem;
+}
+
+.eicrl-footer-brand p {
+  margin: var(--eicrl-space-3) 0 0 3.5rem;
+  color: #bbb8b1;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.eicrl-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--eicrl-space-2) var(--eicrl-space-4);
+}
+
+.eicrl-footer-links a {
+  color: #f2f0eb;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.eicrl-footer-links a:hover {
+  color: var(--eicrl-accent);
+}
+
+.eicrl-footer-meta {
+  grid-column: 1 / -1;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: var(--eicrl-space-2) 0 0;
+  padding-top: var(--eicrl-space-3);
+  color: #9d9a93;
+  font-size: 0.76rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.content-responsive-picture {
+  display: block;
+  margin-block: var(--eicrl-space-5);
+}
+
+.page.single .content .content-responsive-image {
+  display: block;
+  width: 100%;
+  border-radius: var(--eicrl-radius-md);
+}
+
+@media (max-width: 760px) {
+  .eicrl-footer-inner {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .eicrl-footer-links {
+    justify-content: flex-start;
+  }
+
+  .eicrl-footer-meta {
+    grid-column: auto;
   }
 }
 

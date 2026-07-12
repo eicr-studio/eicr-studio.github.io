@@ -5,6 +5,8 @@ summary: "The visit continues our collaboration on efficient recurrent neural ne
 date: 2026-02-09
 draft: false
 image: "/images/202602-frieder.jpeg"
+images:
+  - "/images/202602-frieder.jpeg"
 ---
 
 We are pleased to welcome Prof Frieder Stolzenburg to UNSW Sydney this month.
@@ -15,4 +17,4 @@ During his visit, we will focus on advancing our joint research on efficient rec
 
 [Meet the EICRL team](/people/) · [See related publications](/publications/#2025)
 
-![Oliver Obst and Frieder Stolzenburg in the office at UNSW Sydney](/images/202602-frieder.jpeg)
+{{< responsive-image base="202602-frieder" ext="jpeg" widths="800,1200" width="2048" height="1152" alt="Oliver Obst and Frieder Stolzenburg in the office at UNSW Sydney" >}}
