@@ -34,8 +34,10 @@ _Last updated: 2026-07-13._
 | 2026-08-20 | Learning and Formal Methods for Robotics | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://lafr-workshop.github.io/) |
 | 2026-08-24 | Unifying Representations for Robot Application Development | AAAI 2026 Fall Symposium Series | Symposium | 2026-11-05<br>to 2026-11-07 | Arlington, USA | [Official call](https://aaai.org/conference/fall-symposia/2026-fall-symposium-series-2/) |
 | 2026-09-01 | Perception and Navigation for Marine Robotics | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://www.marinerobotics.info/) |
+| 2026-09-01<br>AoE | ICRA 2027 workshop and tutorial pre-proposals | ICRA 2027 | Workshop proposal | 2027-05-24<br>or 2027-05-28 | Seoul, South Korea | [Official call](https://2027.ieee-icra.org/contribute/) |
 | 2026-09-20 | Australasian Conference on Robotics and Automation | ACRA 2026 | Conference | 2026-11-30<br>to 2026-12-02 | Canberra, Australia | [Official call](https://www.araa.asn.au/conference/acra-2026/) |
 | 2026-10-15 | RoboSoft 2027 main conference | RoboSoft 2027 | Conference | 2027-04-05<br>to 2027-04-09 | Brisbane, Australia | [Official call](https://robosoft27.com/call-for-papers/) |
+| 2026-11-01<br>PST | ICRA 2027 invited full workshop and tutorial proposals | ICRA 2027 | Workshop proposal | 2027-05-24<br>or 2027-05-28 | Seoul, South Korea | [Official call](https://2027.ieee-icra.org/contribute/) |
 
 ## Open journal special issues
 
