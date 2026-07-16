@@ -2,7 +2,7 @@
 title: "RobotCFPs: Calls for Papers"
 description: "Selected open calls for papers in AI, machine learning, data science and robotics."
 date: 2026-07-11
-lastmod: 2026-07-13
+lastmod: 2026-07-17
 draft: false
 pageStyle: "wide"
 pageClass: "robotcfps-page"
@@ -18,7 +18,7 @@ The list is reviewed periodically rather than on a fixed schedule. The update da
 
 <!-- CFP-RADAR:START -->
 
-_Last updated: 2026-07-13._
+_Last updated: 2026-07-17._
 
 ## Open conference and workshop calls
 
@@ -27,6 +27,10 @@ _Last updated: 2026-07-13._
 | 2026-07-17 | AI Meets Control for Resilient and Reliable Robot Planning | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sites.google.com/view/aim-ctrl/home-page) |
 | 2026-07-24 | Humanoids 2026 main conference | Humanoids 2026 | Conference | 2026-12-06<br>to 2026-12-09 | Santa Clara, USA | [Official call](https://2026.ieee-humanoids.org/call-for-papers/) |
 | 2026-07-27 | Safety-Critical Robotics | CASE 2026 | Workshop | 2026-08-17 | Shenyang, China | [Official call](https://safety-critical-robotics.github.io/) |
+| 2026-08-03<br>AoE | Humanoids 2026 workshop and tutorial proposals | Humanoids 2026 | Workshop proposal | 2026-12-07 | Santa Clara, USA | [Official call](https://2026.ieee-humanoids.org/call-for-workshops-and-tutorials/) |
+| 2026-08-05 | Wanting What is Needed: From Homeostatic Control to Adaptive Behavior | SAB 2026 | Workshop | 2026-10-19 | Berlin, Germany | [Official call](https://wwin-workshop.github.io/sab2026) |
+| 2026-08-09 | Real-World Challenges in Multi-Robot Cooperation: Heterogeneity and Diversity | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://sites.google.com/view/iros2026-2nd-wrwcmrc/contribute) |
+| 2026-08-13<br>AoE | Intelligent Information Gathering for Single and Multi-Robot Systems | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://frostlab.byu.edu/IIG-workshop/) |
 | 2026-08-14<br>AoE | Space Exploration and Sustained Operations Beyond Earth | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://space-robots.org/iros2026/) |
 | 2026-08-15 | From Generative AI to Digital Twins: Perception, Simulation, and Learning for Surgical Robotics | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://utkauraslab.github.io/surgtwin-workshop.github.io/) |
 | 2026-08-15<br>AoE | Multi-Agent Systems: Beyond the Warehouse | IROS 2026 | Workshop | TBC | Pittsburgh, USA | [Official call](https://sites.google.com/mtu.edu/masbw-iros26/home) |
