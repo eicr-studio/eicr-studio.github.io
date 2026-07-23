@@ -2,7 +2,7 @@
 title: "RobotCFPs: Calls for Papers"
 description: "Selected open calls for papers in AI, machine learning, data science and robotics."
 date: 2026-07-11
-lastmod: 2026-07-20
+lastmod: 2026-07-24
 draft: false
 pageStyle: "wide"
 pageClass: "robotcfps-page"
@@ -18,7 +18,7 @@ The list is reviewed periodically rather than on a fixed schedule. The update da
 
 <!-- CFP-RADAR:START -->
 
-_Last updated: 2026-07-20._
+_Last updated: 2026-07-24._
 
 ## Open conference and workshop calls
 
@@ -27,7 +27,9 @@ _Last updated: 2026-07-20._
 | 2026-07-24 | Humanoids 2026 main conference | Humanoids 2026 | Conference | 2026-12-06<br>to 2026-12-09 | Santa Clara, USA | [Official call](https://2026.ieee-humanoids.org/call-for-papers/) |
 | 2026-07-27 | Safety-Critical Robotics | CASE 2026 | Workshop | 2026-08-17 | Shenyang, China | [Official call](https://safety-critical-robotics.github.io/) |
 | 2026-07-29 | Semantic-Aware Mapping and Navigation | IROS 2026 | Workshop | 2026-09-27<br>or 2026-10-01 | Pittsburgh, USA | [Official call](https://federicorollo.github.io/SeMaNa-Workshop/sections/cfp.html) |
+| 2026-08-01 | AI and the Verification of Autonomous Systems | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sites.google.com/view/vas-iros-workshop/) |
 | 2026-08-03<br>AoE | Humanoids 2026 workshop and tutorial proposals | Humanoids 2026 | Workshop proposal | 2026-12-07 | Santa Clara, USA | [Official call](https://2026.ieee-humanoids.org/call-for-workshops-and-tutorials/) |
+| 2026-08-03<br>AoE | Contact and Learning | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sites.google.com/view/contact-and-learning/home) |
 | 2026-08-05 | Wanting What is Needed: From Homeostatic Control to Adaptive Behavior | SAB 2026 | Workshop | 2026-10-19 | Berlin, Germany | [Official call](https://wwin-workshop.github.io/sab2026) |
 | 2026-08-09 | Real-World Challenges in Multi-Robot Cooperation: Heterogeneity and Diversity | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://sites.google.com/view/iros2026-2nd-wrwcmrc/contribute) |
 | 2026-08-13<br>AoE | Intelligent Information Gathering for Single and Multi-Robot Systems | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://frostlab.byu.edu/IIG-workshop/) |
@@ -40,7 +42,9 @@ _Last updated: 2026-07-20._
 | 2026-08-20 | Learning and Formal Methods for Robotics | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://lafr-workshop.github.io/) |
 | 2026-08-21 | Bridging Perspectives in Navigation | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://bridging-navigation.github.io/website/) |
 | 2026-08-24 | Unifying Representations for Robot Application Development | AAAI 2026 Fall Symposium Series | Symposium | 2026-11-05<br>to 2026-11-07 | Arlington, USA | [Official call](https://aaai.org/conference/fall-symposia/2026-fall-symposium-series-2/) |
+| 2026-08-24 | Perception and Decision Making for Athletic Humanoid Robotics | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://iros-2026-athletic-humanoid.github.io/workshop/) |
 | 2026-08-25<br>AoE | Reproducible Benchmarking of Robotic Grasping and Manipulation | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sites.google.com/view/rgmcw2026) |
+| 2026-08-25<br>AoE | When Muscles Think: The Embodied Intelligence of Biological and Robotic Actuation | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://sites.google.com/ucsd.edu/iros26-ws) |
 | 2026-09-01 | Perception and Navigation for Marine Robotics | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://www.marinerobotics.info/) |
 | 2026-09-01<br>AoE | ICRA 2027 workshop and tutorial pre-proposals | ICRA 2027 | Workshop proposal | 2027-05-24<br>or 2027-05-28 | Seoul, South Korea | [Official call](https://2027.ieee-icra.org/contribute/) |
 | 2026-09-20 | Australasian Conference on Robotics and Automation | ACRA 2026 | Conference | 2026-11-30<br>to 2026-12-02 | Canberra, Australia | [Official call](https://www.araa.asn.au/conference/acra-2026/) |
@@ -63,7 +67,6 @@ _Only calls that expired within the previous 31 days are retained._
 
 | Deadline | Call | Venue | Type | Event date | Location | Link |
 |---|---|---|---|---|---|---|
-| 2026-06-19 | Robot World Models | RSS 2026 | Workshop | 2026-07-17 | Sydney, Australia | [Official call](https://robot-worldmodels.github.io/) |
 | 2026-06-28<br>AEDT | Information, Telecommunications and Electronics Engineering Symposium abstracts | ITEE 2026 | Local event | 2026-11-19<br>to 2026-11-20 | Melbourne, Australia | [Official call](https://www.engineersaustralia.org.au/itee) |
 
 ## Recently expired journal special issues
