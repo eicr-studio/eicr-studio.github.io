@@ -2,7 +2,7 @@
 title: "RobotCFPs: Calls for Papers"
 description: "Selected open calls for papers in AI, machine learning, data science and robotics."
 date: 2026-07-11
-lastmod: 2026-07-24
+lastmod: 2026-07-27
 draft: false
 pageStyle: "wide"
 pageClass: "robotcfps-page"
@@ -18,16 +18,17 @@ The list is reviewed periodically rather than on a fixed schedule. The update da
 
 <!-- CFP-RADAR:START -->
 
-_Last updated: 2026-07-24._
+_Last updated: 2026-07-27._
 
 ## Open conference and workshop calls
 
 | Deadline | Call | Venue | Type | Event date | Location | Link |
 |---|---|---|---|---|---|---|
-| 2026-07-24 | Humanoids 2026 main conference | Humanoids 2026 | Conference | 2026-12-06<br>to 2026-12-09 | Santa Clara, USA | [Official call](https://2026.ieee-humanoids.org/call-for-papers/) |
 | 2026-07-27 | Safety-Critical Robotics | CASE 2026 | Workshop | 2026-08-17 | Shenyang, China | [Official call](https://safety-critical-robotics.github.io/) |
+| 2026-07-27 | Robotic One-Shot Exploration from Deep Ocean to Deep Space | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sites.google.com/view/iros-2026-rose-workshop/) |
 | 2026-07-29 | Semantic-Aware Mapping and Navigation | IROS 2026 | Workshop | 2026-09-27<br>or 2026-10-01 | Pittsburgh, USA | [Official call](https://federicorollo.github.io/SeMaNa-Workshop/sections/cfp.html) |
 | 2026-08-01 | AI and the Verification of Autonomous Systems | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sites.google.com/view/vas-iros-workshop/) |
+| 2026-08-01 | IEEE International Conference on Robotics and Biomimetics | ROBIO 2026 | Conference | 2026-12-16<br>to 2026-12-20 | Tengchong, China | [Official call](https://www.robio2026.org/) |
 | 2026-08-03<br>AoE | Humanoids 2026 workshop and tutorial proposals | Humanoids 2026 | Workshop proposal | 2026-12-07 | Santa Clara, USA | [Official call](https://2026.ieee-humanoids.org/call-for-workshops-and-tutorials/) |
 | 2026-08-03<br>AoE | Contact and Learning | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sites.google.com/view/contact-and-learning/home) |
 | 2026-08-05 | Wanting What is Needed: From Homeostatic Control to Adaptive Behavior | SAB 2026 | Workshop | 2026-10-19 | Berlin, Germany | [Official call](https://wwin-workshop.github.io/sab2026) |
@@ -59,7 +60,9 @@ _Last updated: 2026-07-24._
 | 2026-09-19 | Swarm Robotics | npj Robotics | distributed control, multi-agent learning, robot swarms | [Official call](https://www.nature.com/collections/fhhcicdjad) |
 | 2026-10-30 | Intelligent Computing for Embodied AI and Robotics: Foundations and Platform Technologies | Intelligent Computing | foundation models, robot learning, simulation, HRI | [Official call](https://spj.science.org/page/icomputing/si/icomputing-ai-robotics) |
 | 2026-11-20 | Event-Based, Bio-Inspired, and Unconventional Vision System for Robotics and Mechatronics | Journal of Robotics and Mechatronics | event-based vision, neuromorphic sensors, bio-inspired perception | [Official call](https://www.fujipress.jp/cfp/rb-39-3-cfp/) |
+| 2026-12-15 | Social, Emotional, and Cognitive Visual Intelligence | International Journal of Computer Vision | social perception, multimodal learning, human-agent interaction | [Official call](https://wang.ist.psu.edu/docs/docs/IJCV-CFP.pdf) |
 | 2026-12-31 | Human-Centered Physical AI Robotics | Autonomous Robots | human-aware planning, physical HRI, shared control | [Official call](https://link.springer.com/collections/aajjjdgbcj) |
+| 2027-06-01 | Failing Forward: Design and Deployment Lessons from Real-World Human-Robot Interaction | International Journal of Social Robotics | deployment failures, robust HRI, error recovery, field evaluation | [Official call](https://link.springer.com/collections/efjdefgdef) |
 
 ## Recently expired conference and workshop calls
 
@@ -68,6 +71,7 @@ _Only calls that expired within the previous 31 days are retained._
 | Deadline | Call | Venue | Type | Event date | Location | Link |
 |---|---|---|---|---|---|---|
 | 2026-06-28<br>AEDT | Information, Telecommunications and Electronics Engineering Symposium abstracts | ITEE 2026 | Local event | 2026-11-19<br>to 2026-11-20 | Melbourne, Australia | [Official call](https://www.engineersaustralia.org.au/itee) |
+| 2026-07-24<br>AoE | Humanoids 2026 main conference | Humanoids 2026 | Conference | 2026-12-06<br>to 2026-12-09 | Santa Clara, USA | [Official call](https://2026.ieee-humanoids.org/call-for-papers/) |
 
 ## Recently expired journal special issues
 
