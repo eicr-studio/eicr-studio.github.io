@@ -43,6 +43,7 @@ _Last updated: 2026-08-03._
 | 2026-08-24 | Perception and Decision Making for Athletic Humanoid Robotics | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://iros-2026-athletic-humanoid.github.io/workshop/) |
 | 2026-08-25<br>AoE | Reproducible Benchmarking of Robotic Grasping and Manipulation | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sites.google.com/view/rgmcw2026) |
 | 2026-08-25<br>AoE | When Muscles Think: The Embodied Intelligence of Biological and Robotic Actuation | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://sites.google.com/ucsd.edu/iros26-ws) |
+| 2026-08-29<br>AoE | World Models in Physical AI | NeurIPS 2026 | Workshop | 2026-12-12<br>or 2026-12-13 | Sydney, Australia | [Official call](https://www.worldmodels-physicalai.com/) |
 | 2026-09-01 | Perception and Navigation for Marine Robotics | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://www.marinerobotics.info/) |
 | 2026-09-01<br>AoE | ICRA 2027 workshop and tutorial pre-proposals | ICRA 2027 | Workshop proposal | 2027-05-24<br>or 2027-05-28 | Seoul, South Korea | [Official call](https://2027.ieee-icra.org/contribute/) |
 | 2026-09-15 | Touch-to-Action: Enhancing Robot Manipulation through Tactile Perception | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://iros-touch2action.github.io/) |
