@@ -2,7 +2,7 @@
 title: "RobotCFPs: Calls for Papers"
 description: "Selected open calls for papers in AI, machine learning, data science and robotics."
 date: 2026-07-11
-lastmod: 2026-08-17
+lastmod: 2026-08-18
 draft: false
 pageStyle: "wide"
 pageClass: "robotcfps-page"
@@ -18,14 +18,12 @@ The list is reviewed periodically rather than on a fixed schedule. The update da
 
 <!-- CFP-RADAR:START -->
 
-_Last updated: 2026-08-17._
+_Last updated: 2026-08-18._
 
 ## Open conference and workshop calls
 
 | Deadline | Call | Venue | Type | Event date | Location | Link |
 |---|---|---|---|---|---|---|
-| 2026-08-17 | 8th Workshop on Formal Methods for Autonomous Systems | FMAS 2026 | Workshop | 2026-11-17<br>to 2026-11-18 | Southampton, UK | [Official call](https://fmasworkshop.github.io/FMAS2026/) |
-| 2026-08-17 | Human–Robot Dialogue | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://human-robot-dialogue.github.io/) |
 | 2026-08-20 | AI Meets Control for Resilient and Reliable Robot Planning | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sites.google.com/view/aim-ctrl/call-for-papers) |
 | 2026-08-20 | Tightly Coupled Physical Collaboration in Multi-Robot Systems | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://physcollabot.github.io/) |
 | 2026-08-20 | Sim2Real and Classical Control | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://sim2realgap.github.io/sim2real-and-control-workshop-iros2026/) |
@@ -64,6 +62,7 @@ _Last updated: 2026-08-17._
 | Deadline | Special issue | Journal | Topics | Link |
 |---|---|---|---|---|
 | 2026-09-19 | Swarm Robotics | npj Robotics | distributed control, multi-agent learning, robot swarms | [Official call](https://www.nature.com/collections/fhhcicdjad) |
+| 2026-09-30 | Learning-Based Motion Planning and Control for Contact-Rich Legged Robots | Robot Learning | legged robots, robot learning, motion planning, whole-body control | [Official call](https://www.elspublishing.com/journals/rl/special_issues/) |
 | 2026-10-30 | Intelligent Computing for Embodied AI and Robotics: Foundations and Platform Technologies | Intelligent Computing | foundation models, robot learning, simulation, HRI | [Official call](https://spj.science.org/page/icomputing/si/icomputing-ai-robotics) |
 | 2026-11-20 | Event-Based, Bio-Inspired, and Unconventional Vision System for Robotics and Mechatronics | Journal of Robotics and Mechatronics | event-based vision, neuromorphic sensors, bio-inspired perception | [Official call](https://www.fujipress.jp/cfp/rb-39-3-cfp/) |
 | 2026-12-15 | Social, Emotional, and Cognitive Visual Intelligence | International Journal of Computer Vision | social perception, multimodal learning, human-agent interaction | [Official call](https://wang.ist.psu.edu/docs/docs/IJCV-CFP.pdf) |
@@ -89,6 +88,8 @@ _Only calls that expired within the previous 31 days are retained._
 | 2026-08-15 | From Generative AI to Digital Twins: Perception, Simulation, and Learning for Surgical Robotics | IROS 2026 | Workshop | 2026-09-27 | Pittsburgh, USA | [Official call](https://utkauraslab.github.io/surgtwin-workshop.github.io/) |
 | 2026-08-15<br>AoE | Multi-Agent Systems: Beyond the Warehouse | IROS 2026 | Workshop | TBC | Pittsburgh, USA | [Official call](https://sites.google.com/mtu.edu/masbw-iros26/home) |
 | 2026-08-15 | IEEE International Conference on Robotics and Biomimetics | ROBIO 2026 | Conference | 2026-12-16<br>to 2026-12-20 | Tengchong, China | [Official call](https://www.robio2026.org/) |
+| 2026-08-17 | 8th Workshop on Formal Methods for Autonomous Systems | FMAS 2026 | Workshop | 2026-11-17<br>to 2026-11-18 | Southampton, UK | [Official call](https://fmasworkshop.github.io/FMAS2026/) |
+| 2026-08-17 | Human–Robot Dialogue | IROS 2026 | Workshop | 2026-10-01 | Pittsburgh, USA | [Official call](https://human-robot-dialogue.github.io/) |
 
 ## Recently expired journal special issues
 
