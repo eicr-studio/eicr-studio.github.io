@@ -1,5 +1,9 @@
 {{- define "title" -}}
-  {{- .Title }} · Blackwell · {{ .Site.Title -}}
+  {{- if eq .RelPermalink "/blackwell/" -}}
+    Blackwell · {{ .Site.Title -}}
+  {{- else -}}
+    {{- .Title }} · Blackwell · {{ .Site.Title -}}
+  {{- end -}}
 {{- end -}}
 
 {{- define "content" -}}
