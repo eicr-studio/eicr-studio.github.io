@@ -1207,6 +1207,8 @@ button:focus-visible,
   grid-template-columns: minmax(13rem, 16rem) minmax(0, 1fr);
   gap: clamp(2rem, 5vw, 5rem);
   align-items: start;
+  max-width: 79rem;
+  margin-inline: auto;
 }
 
 .blackwell-docs-sidebar {
