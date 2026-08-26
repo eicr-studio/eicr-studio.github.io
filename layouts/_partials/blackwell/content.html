@@ -1,0 +1,37 @@
+<div class="page blackwell-docs-page">
+  <div class="blackwell-docs-mobile-nav">
+    <details>
+      <summary>Browse Blackwell documentation</summary>
+      {{- partial "blackwell/nav.html" . -}}
+    </details>
+  </div>
+
+  <div class="blackwell-docs-shell">
+    <aside class="blackwell-docs-sidebar">
+      {{- partial "blackwell/nav.html" . -}}
+    </aside>
+
+    <article class="blackwell-docs-main">
+      <header class="blackwell-docs-header">
+        <p class="blackwell-docs-kicker">Blackwell documentation</p>
+        <h1>{{ .Title }}</h1>
+        {{- with .Description }}<p>{{ . }}</p>{{ end -}}
+      </header>
+
+      <div class="blackwell-docs-content" id="content">
+        {{- .Content -}}
+      </div>
+
+      {{- if and .IsSection (not (eq .Params.showChildren false)) -}}
+        <nav class="blackwell-child-grid" aria-label="Pages in {{ .Title }}">
+          {{- range .Pages.ByWeight -}}
+            <a class="blackwell-child-card" href="{{ .RelPermalink }}">
+              <span>{{ .Title }}</span>
+              {{- with .Description }}<small>{{ . }}</small>{{ end -}}
+            </a>
+          {{- end -}}
+        </nav>
+      {{- end -}}
+    </article>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+{{- define "title" -}}
+  {{- .Title }} · Blackwell · {{ .Site.Title -}}
+{{- end -}}
+
+{{- define "content" -}}
+  {{- partial "blackwell/content.html" . -}}
+{{- end -}}
