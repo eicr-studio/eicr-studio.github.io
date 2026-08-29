@@ -1,22 +1,22 @@
 ---
 title: "Installation"
-description: "Install Blackwell from GitHub and choose the correct JAX platform package."
+description: "Install Blackwell from PyPI and choose the correct JAX platform package."
 weight: 10
 draft: false
 ---
 
-Blackwell requires Python 3.11 or newer. It is not yet published on PyPI, so install the current revision directly from GitHub.
+Blackwell requires Python 3.11 or newer. Install the latest release from PyPI.
 
 ### pip
 
 ```console
-python -m pip install "blackwell @ git+https://github.com/unswei/blackwell.git"
+python -m pip install blackwell
 ```
 
 ### uv
 
 ```console
-uv add "blackwell @ git+https://github.com/unswei/blackwell.git"
+uv add blackwell
 ```
 
 Verify the installation:
@@ -25,7 +25,7 @@ Verify the installation:
 python -c "import blackwell; print(blackwell.__version__)"
 ```
 
-The Git repository currently reports version `0.0.0`, reflecting its pre-alpha status.
+The first published release reports version `0.0.1`. Blackwell remains pre-alpha: the supported surface is deliberately small, and API changes are possible before version 1.0.
 
 ## JAX platform choice
 
@@ -50,6 +50,8 @@ python examples/se2_localisation.py --plot localisation.png
 
 ## Development checkout
 
+Blackwell uses [uv](https://docs.astral.sh/uv/) for its reproducible environment:
+
 ```console
 git clone https://github.com/unswei/blackwell.git
 cd blackwell
@@ -58,3 +60,13 @@ uv run pytest
 ```
 
 Continue with the [five-minute localisation](/blackwell/getting-started/quickstart/), or read [Platforms and JAX](/blackwell/help/platforms/) for backend notes.
+
+## Development version
+
+To test the current `main` branch before the next release, install directly from GitHub:
+
+```console
+python -m pip install "blackwell @ git+https://github.com/unswei/blackwell.git@main"
+```
+
+Development versions may contain unreleased API changes. Prefer the PyPI release for reproducible work.

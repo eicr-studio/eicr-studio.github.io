@@ -2,7 +2,7 @@
 title: "Blackwell"
 description: "JAX-native probabilistic robotics: manifold-aware Gaussian and particle state estimation, simulation and consistency metrics."
 date: 2026-08-27T00:00:00+10:00
-lastmod: 2026-08-27T00:00:00+10:00
+lastmod: 2026-08-29T00:00:00+10:00
 weight: 1
 draft: false
 showChildren: false
@@ -75,4 +75,4 @@ The [five-minute localisation](/blackwell/getting-started/quickstart/) continues
   <a class="blackwell-docs-card" href="/blackwell/help/"><strong>Help</strong><small>Troubleshoot installation, JIT, numerical behaviour and platforms.</small></a>
 </div>
 
-Blackwell is open source under Apache-2.0. [View the source code](https://github.com/unswei/blackwell).
+Blackwell is open source under Apache-2.0. [Install it from PyPI](https://pypi.org/project/blackwell/) or [view the source code](https://github.com/unswei/blackwell).
